@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PTNN Maintenance Mode</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Montserrat',sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg,#f5e6d3,#e8c9a8,#d7bfae,#c49a6c);
+            color:#3b2f2f;
+            height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .container{
+            text-align:center;
+            max-width:700px;
+            padding:40px;
+            background:rgba(78,52,46,0.15);
+            border-radius:20px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .title{
+            font-size:48px;
+            font-weight:700;
+            margin-bottom:10px;
+        }
+
+        .subtitle{
+            font-size:18px;
+            opacity:0.85;
+            margin-bottom:25px;
+        }
+
+        .progress{
+            width:100%;
+            height:12px;
+            background:#e0c3a3;
+            border-radius:999px;
+            overflow:hidden;
+            margin:25px 0;
+        }
+
+        .bar{
+            height:100%;
+            width:60%;
+            background:#4e342e;
+            animation: load 2s infinite alternate;
+        }
+
+        @keyframes load{
+            from{width:40%;}
+            to{width:90%;}
+        }
+
+        .status{
+            font-size:16px;
+            margin-top:10px;
+            font-weight:600;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="title">MAINTENANCE MODE (CHẾ ĐỘ BẢO TRÌ)</div>
+
+    <div class="subtitle">
+        PTNN Music System is currently upgrading to improve your experience (Hệ thống nhạc PTNN đang nâng cấp để cải thiện trải nghiệm của bạn)
+    </div>
+
+    <div class="progress">
+        <div class="bar"></div>
+    </div>
+
+    <div class="status">
+        Status: Updating system... (Trạng thái: Đang cập nhật hệ thống...)
+    </div>
+
+</div>
+
+</body>
+</html>
